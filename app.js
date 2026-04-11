@@ -536,19 +536,23 @@ class App {
 
     refreshCourseSelect() {
         const select = document.getElementById('course-select');
-        const currentValue = select.value;
+        const currentValue = String(select.value);
         
-        // Remove all optgroups (keep the first default option)
-        const firstOption = select.querySelector('option[value=""]');
-        select.innerHTML = '';
-        if (firstOption) select.appendChild(firstOption);
+        select.innerHTML = '<option value="">-- Escolha um curso --</option>';
         
         this.populateCourseSelect();
         
-        // Restore previous selection
-        if (currentValue) {
+        // Restore previous selection if it's still available in the new list
+        let optionExists = Array.from(select.options).some(opt => opt.value === currentValue);
+        
+        if (currentValue && optionExists) {
             select.value = currentValue;
+        } else {
+            select.value = "";
         }
+        
+        // Force UI update
+        this.onCourseSelect();
     }
 
     // ===== DASHBOARD TAB =====
