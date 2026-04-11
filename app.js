@@ -437,6 +437,11 @@ class App {
         const searchInput = document.getElementById('config-search');
         searchInput.addEventListener('input', () => this.renderConfigTable());
 
+        const modalityFilter = document.getElementById('config-modality-filter');
+        if (modalityFilter) {
+            modalityFilter.addEventListener('change', () => this.renderConfigTable());
+        }
+
         const btnApplyAll = document.getElementById('btn-apply-all');
         btnApplyAll.addEventListener('click', () => {
             const defaultCost = parseFloat(document.getElementById('default-cost').value);
@@ -459,10 +464,13 @@ class App {
     renderConfigTable() {
         const tbody = document.getElementById('config-tbody');
         const searchTerm = document.getElementById('config-search').value.toLowerCase();
+        const modalityFilter = document.getElementById('config-modality-filter')?.value || 'all';
         
-        const filtered = this.courses.filter(course => 
-            course.name.toLowerCase().includes(searchTerm)
-        );
+        const filtered = this.courses.filter(course => {
+            const matchesSearch = course.name.toLowerCase().includes(searchTerm);
+            const matchesModality = modalityFilter === 'all' || course.modality === modalityFilter;
+            return matchesSearch && matchesModality;
+        });
 
         tbody.innerHTML = '';
 

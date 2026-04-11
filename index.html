@@ -217,6 +217,17 @@
                     </svg>
                     <input type="text" id="config-search" placeholder="Buscar curso...">
                 </div>
+                <div class="select-wrapper" style="min-width: 180px;">
+                    <select id="config-modality-filter" style="padding: var(--space-sm) var(--space-lg) var(--space-sm) var(--space-md);">
+                        <option value="all">Todas as Modalidades</option>
+                        <option value="FDS">Somente FDS</option>
+                        <option value="Semanal">Somente Semanal</option>
+                        <option value="Outro">Outros / Não Especificado</option>
+                    </select>
+                    <svg class="select-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6 9 12 15 18 9"/>
+                    </svg>
+                </div>
                 <div class="config-actions">
                     <button class="btn-secondary" id="btn-apply-all">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
