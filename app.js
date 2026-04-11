@@ -128,9 +128,14 @@ class App {
     // ===== CALCULATOR =====
     setupCalculator() {
         const courseSelect = document.getElementById('course-select');
+        const modalityFilter = document.getElementById('calc-modality-filter');
         const discountInput = document.getElementById('discount-value');
         const enrolledInput = document.getElementById('enrolled-students');
         const btnCalculate = document.getElementById('btn-calculate');
+
+        if (modalityFilter) {
+            modalityFilter.addEventListener('change', () => this.refreshCourseSelect());
+        }
 
         courseSelect.addEventListener('change', () => this.onCourseSelect());
         
@@ -164,10 +169,15 @@ class App {
 
     populateCourseSelect() {
         const select = document.getElementById('course-select');
+        const modalityFilterval = document.getElementById('calc-modality-filter')?.value || 'all';
         
         // Group courses by base name (without Qualificação/Capacitação or Modality tags)
         const groups = {};
         this.courses.forEach(course => {
+            if (modalityFilterval !== 'all' && course.modality !== modalityFilterval && course.modality !== 'Outro') {
+                return; // Pula este curso se não bater com o filtro principal
+            }
+
             let baseName = course.name.replace(/\s*\(Qualificação\)|\s*\(Capacitação\)/g, '');
             baseName = baseName.replace(/\s*\[.*?\]/g, '').trim();
             if (!groups[baseName]) groups[baseName] = [];
