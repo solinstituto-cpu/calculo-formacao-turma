@@ -30,19 +30,73 @@ class App {
 
     // ===== DATA MANAGEMENT =====
     loadCourses() {
+        // Expand courses dynamically (FDS vs Semanal)
+        const expandedCourses = this.expandCourses(COURSES_DATA);
+        
         const saved = localStorage.getItem(this.STORAGE_KEY);
         if (saved) {
             const savedCourses = JSON.parse(saved);
-            // Merge: use saved targetRevenue if exists, otherwise use default from data.js
-            return COURSES_DATA.map(course => {
-                const savedCourse = savedCourses.find(s => s.id === course.id);
+            return expandedCourses.map(course => {
+                const savedCourse = savedCourses.find(s => String(s.id) === String(course.id));
                 return {
                     ...course,
                     targetRevenue: savedCourse ? savedCourse.targetRevenue : course.targetRevenue
                 };
             });
         }
-        return [...COURSES_DATA];
+        return expandedCourses;
+    }
+
+    expandCourses(rawCourses) {
+        const processed = [];
+        
+        rawCourses.forEach(course => {
+            const duration = course.duration.toLowerCase();
+            const hasFDS = duration.includes('fds');
+            // Check if it has a non-FDS component (mês, meses, encontros, aulas, dias)
+            const hasSemanal = duration.includes('mês') || duration.includes('meses') || 
+                               duration.includes('encontro') || duration.includes('aula') || 
+                               duration.includes('dias');
+                               
+            if (hasFDS && hasSemanal) {
+                // Course is offered in both modalities, split it
+                let fdsMatch = course.duration.match(/(\d+\s*FDS)/i);
+                let fdsPart = fdsMatch ? fdsMatch[0] : "FDS";
+                
+                // Clean up the string to get only the weekly part (remove '1 FDS, ' or '1 FDS ou ')
+                let semanalPart = course.duration.replace(/(\d+\s*FDS)(,?\s*ou\s*|,\s*|ou\s*)/i, '').trim();
+                semanalPart = semanalPart.charAt(0).toUpperCase() + semanalPart.slice(1);
+                
+                processed.push({
+                    ...course,
+                    id: `${course.id}-FDS`,
+                    name: `${course.name} [FDS]`,
+                    duration: fdsPart,
+                    modality: 'FDS'
+                });
+                
+                processed.push({
+                    ...course,
+                    id: `${course.id}-SEM`,
+                    name: `${course.name} [Semanal]`,
+                    duration: semanalPart,
+                    modality: 'Semanal'
+                });
+            } else {
+                // Keep as is, just add modality marker
+                let modality = 'Outro';
+                if (hasFDS) modality = 'FDS';
+                else if (hasSemanal) modality = 'Semanal';
+                
+                processed.push({
+                    ...course,
+                    id: String(course.id),
+                    modality: modality
+                });
+            }
+        });
+        
+        return processed;
     }
 
     saveCourses() {
@@ -111,10 +165,11 @@ class App {
     populateCourseSelect() {
         const select = document.getElementById('course-select');
         
-        // Group courses by base name (without Qualificação/Capacitação)
+        // Group courses by base name (without Qualificação/Capacitação or Modality tags)
         const groups = {};
         this.courses.forEach(course => {
-            const baseName = course.name.replace(/\s*\(Qualificação\)|\s*\(Capacitação\)/g, '').trim();
+            let baseName = course.name.replace(/\s*\(Qualificação\)|\s*\(Capacitação\)/g, '');
+            baseName = baseName.replace(/\s*\[.*?\]/g, '').trim();
             if (!groups[baseName]) groups[baseName] = [];
             groups[baseName].push(course);
         });
@@ -141,8 +196,8 @@ class App {
 
     getSelectedCourse() {
         const select = document.getElementById('course-select');
-        const id = parseInt(select.value);
-        return this.courses.find(c => c.id === id);
+        const id = select.value;
+        return this.courses.find(c => String(c.id) === String(id));
     }
 
     onCourseSelect() {
@@ -438,9 +493,9 @@ class App {
             // Add event listener for cost input
             const input = tr.querySelector('.cost-input');
             input.addEventListener('change', (e) => {
-                const id = parseInt(e.target.dataset.courseId);
+                const id = e.target.dataset.courseId;
                 const value = parseFloat(e.target.value) || 0;
-                const courseToUpdate = this.courses.find(c => c.id === id);
+                const courseToUpdate = this.courses.find(c => String(c.id) === String(id));
                 
                 if (courseToUpdate) {
                     courseToUpdate.targetRevenue = value;
