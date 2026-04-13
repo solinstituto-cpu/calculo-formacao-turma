@@ -30,13 +30,10 @@ class App {
 
     // ===== DATA MANAGEMENT =====
     loadCourses() {
-        // Expand courses dynamically (FDS vs Semanal)
-        const expandedCourses = this.expandCourses(COURSES_DATA);
-        
         const saved = localStorage.getItem(this.STORAGE_KEY);
         if (saved) {
             const savedCourses = JSON.parse(saved);
-            return expandedCourses.map(course => {
+            return COURSES_DATA.map(course => {
                 const savedCourse = savedCourses.find(s => String(s.id) === String(course.id));
                 return {
                     ...course,
@@ -44,59 +41,7 @@ class App {
                 };
             });
         }
-        return expandedCourses;
-    }
-
-    expandCourses(rawCourses) {
-        const processed = [];
-        
-        rawCourses.forEach(course => {
-            const duration = course.duration.toLowerCase();
-            const hasFDS = duration.includes('fds');
-            // Check if it has a non-FDS component (mês, meses, encontros, aulas, dias)
-            const hasSemanal = duration.includes('mês') || duration.includes('meses') || 
-                               duration.includes('encontro') || duration.includes('aula') || 
-                               duration.includes('dias');
-                               
-            if (hasFDS && hasSemanal) {
-                // Course is offered in both modalities, split it
-                let fdsMatch = course.duration.match(/(\d+\s*FDS)/i);
-                let fdsPart = fdsMatch ? fdsMatch[0] : "FDS";
-                
-                // Clean up the string to get only the weekly part (remove '1 FDS, ' or '1 FDS ou ')
-                let semanalPart = course.duration.replace(/(\d+\s*FDS)(,?\s*ou\s*|,\s*|ou\s*)/i, '').trim();
-                semanalPart = semanalPart.charAt(0).toUpperCase() + semanalPart.slice(1);
-                
-                processed.push({
-                    ...course,
-                    id: `${course.id}-FDS`,
-                    name: `${course.name} [FDS]`,
-                    duration: fdsPart,
-                    modality: 'FDS'
-                });
-                
-                processed.push({
-                    ...course,
-                    id: `${course.id}-SEM`,
-                    name: `${course.name} [Semanal]`,
-                    duration: semanalPart,
-                    modality: 'Semanal'
-                });
-            } else {
-                // Keep as is, just add modality marker
-                let modality = 'Outro';
-                if (hasFDS) modality = 'FDS';
-                else if (hasSemanal) modality = 'Semanal';
-                
-                processed.push({
-                    ...course,
-                    id: String(course.id),
-                    modality: modality
-                });
-            }
-        });
-        
-        return processed;
+        return COURSES_DATA;
     }
 
     saveCourses() {
@@ -191,7 +136,11 @@ class App {
             groups[groupName].forEach(course => {
                 const option = document.createElement('option');
                 option.value = course.id;
-                option.textContent = `${course.name} - R$ ${course.basePrice.toFixed(2)}`;
+                let displayName = course.name;
+                if (course.modality !== 'Outro') {
+                    displayName += ` [${course.modality}]`;
+                }
+                option.textContent = `${displayName} - R$ ${course.basePrice.toFixed(2)}`;
                 
                 if (course.targetRevenue <= 0) {
                     option.textContent += ' ⚠️ (sem custo alvo)';
@@ -488,8 +437,13 @@ class App {
             const tr = document.createElement('tr');
             const isConfigured = course.targetRevenue > 0;
             
+            let displayName = course.name;
+            if (course.modality !== 'Outro') {
+                displayName += ` [${course.modality}]`;
+            }
+            
             tr.innerHTML = `
-                <td class="course-name-cell">${course.name}</td>
+                <td class="course-name-cell">${displayName}</td>
                 <td class="duration-cell">${course.duration}</td>
                 <td class="base-price-cell">R$ ${course.basePrice.toFixed(2)}</td>
                 <td>
