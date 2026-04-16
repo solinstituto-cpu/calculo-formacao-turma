@@ -9,7 +9,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 565,
-        "targetRevenue": 1400,
+        "profCost": 560,
+        "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
     {
@@ -18,7 +19,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "FDS",
         "basePrice": 565,
-        "targetRevenue": 1500,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -27,7 +29,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 633,
-        "targetRevenue": 1400,
+        "profCost": 560,
+        "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
     {
@@ -36,7 +39,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "FDS",
         "basePrice": 633,
-        "targetRevenue": 1500,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -45,7 +49,8 @@ const COURSES_DATA = [
         "duration": "1 mês ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 565,
-        "targetRevenue": 1400,
+        "profCost": 560,
+        "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
     {
@@ -54,6 +59,7 @@ const COURSES_DATA = [
         "duration": "1 mês ou 4 encontros",
         "modality": "FDS",
         "basePrice": 565,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -63,7 +69,8 @@ const COURSES_DATA = [
         "duration": "1 mês ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 600,
-        "targetRevenue": 1400,
+        "profCost": 560,
+        "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
     {
@@ -72,6 +79,7 @@ const COURSES_DATA = [
         "duration": "1 mês ou 4 encontros",
         "modality": "FDS",
         "basePrice": 600,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -81,6 +89,7 @@ const COURSES_DATA = [
         "duration": "1 mês ou 7 encontros",
         "modality": "Semanal",
         "basePrice": 685,
+        "profCost": 980,
         "targetRevenue": 1960,
         "_sheetType": "Semana"
     },
@@ -90,6 +99,7 @@ const COURSES_DATA = [
         "duration": "1 mês ou 7 encontros",
         "modality": "FDS",
         "basePrice": 685,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -99,6 +109,7 @@ const COURSES_DATA = [
         "duration": "1 mês ou 7 encontros",
         "modality": "Semanal",
         "basePrice": 766,
+        "profCost": 980,
         "targetRevenue": 1960,
         "_sheetType": "Semana"
     },
@@ -108,6 +119,7 @@ const COURSES_DATA = [
         "duration": "1 mês ou 7 encontros",
         "modality": "FDS",
         "basePrice": 766,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -117,6 +129,7 @@ const COURSES_DATA = [
         "duration": "2 FDS, 1 mês ou 8 aulas",
         "modality": "Semanal",
         "basePrice": 870,
+        "profCost": 1120,
         "targetRevenue": 2240,
         "_sheetType": "Semana"
     },
@@ -126,6 +139,7 @@ const COURSES_DATA = [
         "duration": "2 FDS, 1 mês ou 8 aulas",
         "modality": "FDS",
         "basePrice": 870,
+        "profCost": 1200,
         "targetRevenue": 2400,
         "_sheetType": "FDS"
     },
@@ -135,6 +149,7 @@ const COURSES_DATA = [
         "duration": "2 FDS, 1 mês ou 8 aulas",
         "modality": "Semanal",
         "basePrice": 974,
+        "profCost": 1120,
         "targetRevenue": 2240,
         "_sheetType": "Semana"
     },
@@ -144,6 +159,7 @@ const COURSES_DATA = [
         "duration": "2 FDS, 1 mês ou 8 aulas",
         "modality": "FDS",
         "basePrice": 974,
+        "profCost": 1200,
         "targetRevenue": 2400,
         "_sheetType": "FDS"
     },
@@ -153,6 +169,7 @@ const COURSES_DATA = [
         "duration": "15 dias ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 304,
+        "profCost": 560,
         "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
@@ -162,6 +179,7 @@ const COURSES_DATA = [
         "duration": "15 dias ou 4 encontros",
         "modality": "FDS",
         "basePrice": 304,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -171,6 +189,7 @@ const COURSES_DATA = [
         "duration": "15 dias ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 340,
+        "profCost": 560,
         "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
@@ -180,6 +199,7 @@ const COURSES_DATA = [
         "duration": "15 dias ou 4 encontros",
         "modality": "FDS",
         "basePrice": 340,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -189,6 +209,7 @@ const COURSES_DATA = [
         "duration": "2 FDS, 1 mês ou 8 encontros",
         "modality": "Semanal",
         "basePrice": 808,
+        "profCost": 1120,
         "targetRevenue": 2240,
         "_sheetType": "Semana"
     },
@@ -198,6 +219,7 @@ const COURSES_DATA = [
         "duration": "2 FDS, 1 mês ou 8 encontros",
         "modality": "FDS",
         "basePrice": 808,
+        "profCost": 1200,
         "targetRevenue": 2400,
         "_sheetType": "FDS"
     },
@@ -207,6 +229,7 @@ const COURSES_DATA = [
         "duration": "2 FDS, 1 mês ou 8 encontros",
         "modality": "Semanal",
         "basePrice": 908,
+        "profCost": 1120,
         "targetRevenue": 2240,
         "_sheetType": "Semana"
     },
@@ -216,6 +239,7 @@ const COURSES_DATA = [
         "duration": "2 FDS, 1 mês ou 8 encontros",
         "modality": "FDS",
         "basePrice": 908,
+        "profCost": 1200,
         "targetRevenue": 2400,
         "_sheetType": "FDS"
     },
@@ -225,6 +249,7 @@ const COURSES_DATA = [
         "duration": "15 dias ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 304,
+        "profCost": 560,
         "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
@@ -234,6 +259,7 @@ const COURSES_DATA = [
         "duration": "15 dias ou 4 encontros",
         "modality": "FDS",
         "basePrice": 304,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -243,6 +269,7 @@ const COURSES_DATA = [
         "duration": "15 dias ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 340,
+        "profCost": 560,
         "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
@@ -252,6 +279,7 @@ const COURSES_DATA = [
         "duration": "15 dias ou 4 encontros",
         "modality": "FDS",
         "basePrice": 340,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -261,7 +289,8 @@ const COURSES_DATA = [
         "duration": "2 aulas ( 1 encontro integral)",
         "modality": "Semanal",
         "basePrice": 470,
-        "targetRevenue": 700,
+        "profCost": 280,
+        "targetRevenue": 560,
         "_sheetType": "Semana"
     },
     {
@@ -270,6 +299,7 @@ const COURSES_DATA = [
         "duration": "2 aulas ( 1 encontro integral)",
         "modality": "FDS",
         "basePrice": 470,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -279,7 +309,8 @@ const COURSES_DATA = [
         "duration": "2 aulas ( 1 encontro integral)",
         "modality": "Semanal",
         "basePrice": 527,
-        "targetRevenue": 700,
+        "profCost": 280,
+        "targetRevenue": 560,
         "_sheetType": "Semana"
     },
     {
@@ -288,6 +319,7 @@ const COURSES_DATA = [
         "duration": "2 aulas ( 1 encontro integral)",
         "modality": "FDS",
         "basePrice": 527,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -297,7 +329,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 530,
-        "targetRevenue": 1400,
+        "profCost": 560,
+        "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
     {
@@ -306,7 +339,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "FDS",
         "basePrice": 530,
-        "targetRevenue": 1500,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -315,7 +349,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 595,
-        "targetRevenue": 1400,
+        "profCost": 560,
+        "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
     {
@@ -324,7 +359,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "FDS",
         "basePrice": 595,
-        "targetRevenue": 1500,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -333,7 +369,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 530,
-        "targetRevenue": 1400,
+        "profCost": 560,
+        "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
     {
@@ -342,7 +379,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "FDS",
         "basePrice": 530,
-        "targetRevenue": 1500,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -351,7 +389,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 595,
-        "targetRevenue": 1400,
+        "profCost": 560,
+        "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
     {
@@ -360,7 +399,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "FDS",
         "basePrice": 595,
-        "targetRevenue": 1500,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -369,6 +409,7 @@ const COURSES_DATA = [
         "duration": "15 dias ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 304,
+        "profCost": 560,
         "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
@@ -378,6 +419,7 @@ const COURSES_DATA = [
         "duration": "15 dias ou 4 encontros",
         "modality": "FDS",
         "basePrice": 304,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -387,6 +429,7 @@ const COURSES_DATA = [
         "duration": "15 dias ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 340,
+        "profCost": 560,
         "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
@@ -396,6 +439,7 @@ const COURSES_DATA = [
         "duration": "15 dias ou 4 encontros",
         "modality": "FDS",
         "basePrice": 340,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -405,6 +449,7 @@ const COURSES_DATA = [
         "duration": "2 FDS, 1 mês ou 8 encontros",
         "modality": "Semanal",
         "basePrice": 870,
+        "profCost": 1120,
         "targetRevenue": 2240,
         "_sheetType": "Semana"
     },
@@ -414,6 +459,7 @@ const COURSES_DATA = [
         "duration": "2 FDS, 1 mês ou 8 encontros",
         "modality": "FDS",
         "basePrice": 870,
+        "profCost": 1200,
         "targetRevenue": 2400,
         "_sheetType": "FDS"
     },
@@ -423,6 +469,7 @@ const COURSES_DATA = [
         "duration": "2 FDS, 1 mês ou 8 encontros",
         "modality": "Semanal",
         "basePrice": 974,
+        "profCost": 1120,
         "targetRevenue": 2240,
         "_sheetType": "Semana"
     },
@@ -432,6 +479,7 @@ const COURSES_DATA = [
         "duration": "2 FDS, 1 mês ou 8 encontros",
         "modality": "FDS",
         "basePrice": 974,
+        "profCost": 1200,
         "targetRevenue": 2400,
         "_sheetType": "FDS"
     },
@@ -441,6 +489,7 @@ const COURSES_DATA = [
         "duration": "2 FDS, 1 mês ou 7 encontros",
         "modality": "Semanal",
         "basePrice": 870,
+        "profCost": 980,
         "targetRevenue": 1960,
         "_sheetType": "Semana"
     },
@@ -450,6 +499,7 @@ const COURSES_DATA = [
         "duration": "2 FDS, 1 mês ou 7 encontros",
         "modality": "FDS",
         "basePrice": 870,
+        "profCost": 1200,
         "targetRevenue": 2400,
         "_sheetType": "FDS"
     },
@@ -459,6 +509,7 @@ const COURSES_DATA = [
         "duration": "2 FDS, 1 mês ou 7 encontros",
         "modality": "Semanal",
         "basePrice": 975,
+        "profCost": 980,
         "targetRevenue": 1960,
         "_sheetType": "Semana"
     },
@@ -468,6 +519,7 @@ const COURSES_DATA = [
         "duration": "2 FDS, 1 mês ou 7 encontros",
         "modality": "FDS",
         "basePrice": 975,
+        "profCost": 1200,
         "targetRevenue": 2400,
         "_sheetType": "FDS"
     },
@@ -477,6 +529,7 @@ const COURSES_DATA = [
         "duration": "15 dias ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 304,
+        "profCost": 560,
         "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
@@ -486,6 +539,7 @@ const COURSES_DATA = [
         "duration": "15 dias ou 4 encontros",
         "modality": "FDS",
         "basePrice": 304,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -495,6 +549,7 @@ const COURSES_DATA = [
         "duration": "15 dias ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 340,
+        "profCost": 560,
         "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
@@ -504,6 +559,7 @@ const COURSES_DATA = [
         "duration": "15 dias ou 4 encontros",
         "modality": "FDS",
         "basePrice": 340,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -513,6 +569,7 @@ const COURSES_DATA = [
         "duration": "1 FDS",
         "modality": "Semanal",
         "basePrice": 570,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "Semana"
     },
@@ -522,7 +579,8 @@ const COURSES_DATA = [
         "duration": "1 FDS",
         "modality": "FDS",
         "basePrice": 570,
-        "targetRevenue": 1500,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -531,6 +589,7 @@ const COURSES_DATA = [
         "duration": "1 FDS",
         "modality": "Semanal",
         "basePrice": 639,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "Semana"
     },
@@ -540,7 +599,8 @@ const COURSES_DATA = [
         "duration": "1 FDS",
         "modality": "FDS",
         "basePrice": 639,
-        "targetRevenue": 1500,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -549,7 +609,8 @@ const COURSES_DATA = [
         "duration": "2 FDS, 1 mês e meio ou 10 aulas",
         "modality": "Semanal",
         "basePrice": 760,
-        "targetRevenue": 2000,
+        "profCost": 1400,
+        "targetRevenue": 2800,
         "_sheetType": "Semana"
     },
     {
@@ -558,7 +619,8 @@ const COURSES_DATA = [
         "duration": "2 FDS, 1 mês e meio ou 10 aulas",
         "modality": "FDS",
         "basePrice": 760,
-        "targetRevenue": 1714.29,
+        "profCost": 1200,
+        "targetRevenue": 2400,
         "_sheetType": "FDS"
     },
     {
@@ -567,7 +629,8 @@ const COURSES_DATA = [
         "duration": "2 FDS, 1 mês e meio ou 10 aulas",
         "modality": "Semanal",
         "basePrice": 850,
-        "targetRevenue": 2000,
+        "profCost": 1400,
+        "targetRevenue": 2800,
         "_sheetType": "Semana"
     },
     {
@@ -576,7 +639,8 @@ const COURSES_DATA = [
         "duration": "2 FDS, 1 mês e meio ou 10 aulas",
         "modality": "FDS",
         "basePrice": 850,
-        "targetRevenue": 1714.29,
+        "profCost": 1200,
+        "targetRevenue": 2400,
         "_sheetType": "FDS"
     },
     {
@@ -585,6 +649,7 @@ const COURSES_DATA = [
         "duration": "3 FDS, 3 meses,  ou 12 aulas",
         "modality": "Semanal",
         "basePrice": 1440,
+        "profCost": 1680,
         "targetRevenue": 3360,
         "_sheetType": "Semana"
     },
@@ -594,6 +659,7 @@ const COURSES_DATA = [
         "duration": "3 FDS, 3 meses,  ou 12 aulas",
         "modality": "FDS",
         "basePrice": 1440,
+        "profCost": 1800,
         "targetRevenue": 3600,
         "_sheetType": "FDS"
     },
@@ -603,6 +669,7 @@ const COURSES_DATA = [
         "duration": "3 FDS, 3 meses,  ou 12 aulas",
         "modality": "Semanal",
         "basePrice": 1615,
+        "profCost": 1680,
         "targetRevenue": 3360,
         "_sheetType": "Semana"
     },
@@ -612,6 +679,7 @@ const COURSES_DATA = [
         "duration": "3 FDS, 3 meses,  ou 12 aulas",
         "modality": "FDS",
         "basePrice": 1615,
+        "profCost": 1800,
         "targetRevenue": 3600,
         "_sheetType": "FDS"
     },
@@ -621,7 +689,8 @@ const COURSES_DATA = [
         "duration": "3 FDS,  3 meses ou 20 aulas",
         "modality": "Semanal",
         "basePrice": 1765,
-        "targetRevenue": 5090.91,
+        "profCost": 2800,
+        "targetRevenue": 5600,
         "_sheetType": "Semana"
     },
     {
@@ -630,7 +699,8 @@ const COURSES_DATA = [
         "duration": "3 FDS,  3 meses ou 20 aulas",
         "modality": "FDS",
         "basePrice": 1765,
-        "targetRevenue": 4500,
+        "profCost": 1800,
+        "targetRevenue": 3600,
         "_sheetType": "FDS"
     },
     {
@@ -639,7 +709,8 @@ const COURSES_DATA = [
         "duration": "3 FDS,  3 meses ou 20 aulas",
         "modality": "Semanal",
         "basePrice": 1980,
-        "targetRevenue": 5090.91,
+        "profCost": 2800,
+        "targetRevenue": 5600,
         "_sheetType": "Semana"
     },
     {
@@ -648,7 +719,8 @@ const COURSES_DATA = [
         "duration": "3 FDS,  3 meses ou 20 aulas",
         "modality": "FDS",
         "basePrice": 1980,
-        "targetRevenue": 4500,
+        "profCost": 1800,
+        "targetRevenue": 3600,
         "_sheetType": "FDS"
     },
     {
@@ -657,6 +729,7 @@ const COURSES_DATA = [
         "duration": "1 mês ou 7 encontros",
         "modality": "Semanal",
         "basePrice": 805,
+        "profCost": 980,
         "targetRevenue": 1960,
         "_sheetType": "Semana"
     },
@@ -666,6 +739,7 @@ const COURSES_DATA = [
         "duration": "1 mês ou 7 encontros",
         "modality": "FDS",
         "basePrice": 805,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -675,6 +749,7 @@ const COURSES_DATA = [
         "duration": "1 mês ou 7 encontros",
         "modality": "Semanal",
         "basePrice": 905,
+        "profCost": 980,
         "targetRevenue": 1960,
         "_sheetType": "Semana"
     },
@@ -684,6 +759,7 @@ const COURSES_DATA = [
         "duration": "1 mês ou 7 encontros",
         "modality": "FDS",
         "basePrice": 905,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -693,7 +769,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 615,
-        "targetRevenue": 1400,
+        "profCost": 560,
+        "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
     {
@@ -702,7 +779,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "FDS",
         "basePrice": 615,
-        "targetRevenue": 1500,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -711,7 +789,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 695,
-        "targetRevenue": 1400,
+        "profCost": 560,
+        "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
     {
@@ -720,7 +799,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "FDS",
         "basePrice": 695,
-        "targetRevenue": 1500,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -729,6 +809,7 @@ const COURSES_DATA = [
         "duration": "1 FDS",
         "modality": "Semanal",
         "basePrice": 560,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "Semana"
     },
@@ -738,7 +819,8 @@ const COURSES_DATA = [
         "duration": "1 FDS",
         "modality": "FDS",
         "basePrice": 560,
-        "targetRevenue": 1500,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -747,6 +829,7 @@ const COURSES_DATA = [
         "duration": "1 FDS",
         "modality": "Semanal",
         "basePrice": 627,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "Semana"
     },
@@ -756,7 +839,8 @@ const COURSES_DATA = [
         "duration": "1 FDS",
         "modality": "FDS",
         "basePrice": 627,
-        "targetRevenue": 1500,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -765,6 +849,7 @@ const COURSES_DATA = [
         "duration": "1 mês ou 8 encontros",
         "modality": "Semanal",
         "basePrice": 960,
+        "profCost": 1120,
         "targetRevenue": 2240,
         "_sheetType": "Semana"
     },
@@ -774,6 +859,7 @@ const COURSES_DATA = [
         "duration": "1 mês ou 8 encontros",
         "modality": "FDS",
         "basePrice": 960,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -783,7 +869,8 @@ const COURSES_DATA = [
         "duration": "1 mês ou 8 encontros",
         "modality": "Semanal",
         "basePrice": 1075,
-        "targetRevenue": 1866.67,
+        "profCost": 1120,
+        "targetRevenue": 2240,
         "_sheetType": "Semana"
     },
     {
@@ -792,6 +879,7 @@ const COURSES_DATA = [
         "duration": "1 mês ou 8 encontros",
         "modality": "FDS",
         "basePrice": 1075,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -801,6 +889,7 @@ const COURSES_DATA = [
         "duration": "2 FDS, 1 mês ou 8 encontros",
         "modality": "Semanal",
         "basePrice": 935,
+        "profCost": 1120,
         "targetRevenue": 2240,
         "_sheetType": "Semana"
     },
@@ -810,6 +899,7 @@ const COURSES_DATA = [
         "duration": "2 FDS, 1 mês ou 8 encontros",
         "modality": "FDS",
         "basePrice": 935,
+        "profCost": 1200,
         "targetRevenue": 2400,
         "_sheetType": "FDS"
     },
@@ -819,7 +909,8 @@ const COURSES_DATA = [
         "duration": "2 FDS, 1 mês ou 8 encontros",
         "modality": "Semanal",
         "basePrice": 1048,
-        "targetRevenue": 2800,
+        "profCost": 1120,
+        "targetRevenue": 2240,
         "_sheetType": "Semana"
     },
     {
@@ -828,7 +919,8 @@ const COURSES_DATA = [
         "duration": "2 FDS, 1 mês ou 8 encontros",
         "modality": "FDS",
         "basePrice": 1048,
-        "targetRevenue": 3000,
+        "profCost": 1200,
+        "targetRevenue": 2400,
         "_sheetType": "FDS"
     },
     {
@@ -837,7 +929,8 @@ const COURSES_DATA = [
         "duration": "1 mês ou 8 encontros",
         "modality": "Semanal",
         "basePrice": 608,
-        "targetRevenue": 1600,
+        "profCost": 1120,
+        "targetRevenue": 2240,
         "_sheetType": "Semana"
     },
     {
@@ -846,6 +939,7 @@ const COURSES_DATA = [
         "duration": "1 mês ou 8 encontros",
         "modality": "FDS",
         "basePrice": 608,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -855,6 +949,7 @@ const COURSES_DATA = [
         "duration": "1 mês ou 8 encontros",
         "modality": "Semanal",
         "basePrice": 680,
+        "profCost": 1120,
         "targetRevenue": 2240,
         "_sheetType": "Semana"
     },
@@ -864,6 +959,7 @@ const COURSES_DATA = [
         "duration": "1 mês ou 8 encontros",
         "modality": "FDS",
         "basePrice": 680,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -873,6 +969,7 @@ const COURSES_DATA = [
         "duration": "1 FDS",
         "modality": "Semanal",
         "basePrice": 805,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "Semana"
     },
@@ -882,6 +979,7 @@ const COURSES_DATA = [
         "duration": "1 FDS",
         "modality": "FDS",
         "basePrice": 805,
+        "profCost": 600,
         "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
@@ -891,6 +989,7 @@ const COURSES_DATA = [
         "duration": "1 FDS",
         "modality": "Semanal",
         "basePrice": 905,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "Semana"
     },
@@ -900,6 +999,7 @@ const COURSES_DATA = [
         "duration": "1 FDS",
         "modality": "FDS",
         "basePrice": 905,
+        "profCost": 600,
         "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
@@ -909,7 +1009,8 @@ const COURSES_DATA = [
         "duration": "3 FDS ou 12 encontros",
         "modality": "Semanal",
         "basePrice": 1440,
-        "targetRevenue": 3600,
+        "profCost": 2160,
+        "targetRevenue": 4320,
         "_sheetType": "Semana"
     },
     {
@@ -918,7 +1019,8 @@ const COURSES_DATA = [
         "duration": "3 FDS ou 12 encontros",
         "modality": "FDS",
         "basePrice": 1440,
-        "targetRevenue": 4285.71,
+        "profCost": 3000,
+        "targetRevenue": 6000,
         "_sheetType": "FDS"
     },
     {
@@ -927,7 +1029,8 @@ const COURSES_DATA = [
         "duration": "3 FDS ou 12 encontros",
         "modality": "Semanal",
         "basePrice": 1613,
-        "targetRevenue": 3600,
+        "profCost": 2160,
+        "targetRevenue": 4320,
         "_sheetType": "Semana"
     },
     {
@@ -936,7 +1039,8 @@ const COURSES_DATA = [
         "duration": "3 FDS ou 12 encontros",
         "modality": "FDS",
         "basePrice": 1613,
-        "targetRevenue": 4285.71,
+        "profCost": 3000,
+        "targetRevenue": 6000,
         "_sheetType": "FDS"
     },
     {
@@ -945,6 +1049,7 @@ const COURSES_DATA = [
         "duration": "1 mês ou 8 aulas",
         "modality": "Semanal",
         "basePrice": 570,
+        "profCost": 1120,
         "targetRevenue": 2240,
         "_sheetType": "Semana"
     },
@@ -954,6 +1059,7 @@ const COURSES_DATA = [
         "duration": "1 mês ou 8 aulas",
         "modality": "FDS",
         "basePrice": 570,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -963,6 +1069,7 @@ const COURSES_DATA = [
         "duration": "1 mês ou 8 aulas",
         "modality": "Semanal",
         "basePrice": 639,
+        "profCost": 1120,
         "targetRevenue": 2240,
         "_sheetType": "Semana"
     },
@@ -972,6 +1079,7 @@ const COURSES_DATA = [
         "duration": "1 mês ou 8 aulas",
         "modality": "FDS",
         "basePrice": 639,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -981,7 +1089,8 @@ const COURSES_DATA = [
         "duration": "2 FDS, 1 a 2 meses ou 8 aulas",
         "modality": "Semanal",
         "basePrice": 608,
-        "targetRevenue": 1866.67,
+        "profCost": 1120,
+        "targetRevenue": 2240,
         "_sheetType": "Semana"
     },
     {
@@ -990,7 +1099,8 @@ const COURSES_DATA = [
         "duration": "2 FDS, 1 a 2 meses ou 8 aulas",
         "modality": "FDS",
         "basePrice": 608,
-        "targetRevenue": 2000,
+        "profCost": 1200,
+        "targetRevenue": 2400,
         "_sheetType": "FDS"
     },
     {
@@ -999,6 +1109,7 @@ const COURSES_DATA = [
         "duration": "2 FDS, 1 a 2 meses ou 8 aulas",
         "modality": "Semanal",
         "basePrice": 680,
+        "profCost": 1120,
         "targetRevenue": 2240,
         "_sheetType": "Semana"
     },
@@ -1008,6 +1119,7 @@ const COURSES_DATA = [
         "duration": "2 FDS, 1 a 2 meses ou 8 aulas",
         "modality": "FDS",
         "basePrice": 680,
+        "profCost": 1200,
         "targetRevenue": 2400,
         "_sheetType": "FDS"
     },
@@ -1017,7 +1129,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 6 aulas",
         "modality": "Semanal",
         "basePrice": 304,
-        "targetRevenue": 1400,
+        "profCost": 840,
+        "targetRevenue": 1680,
         "_sheetType": "Semana"
     },
     {
@@ -1026,7 +1139,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 6 aulas",
         "modality": "FDS",
         "basePrice": 304,
-        "targetRevenue": 1000,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -1035,7 +1149,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 6 aulas",
         "modality": "Semanal",
         "basePrice": 340,
-        "targetRevenue": 1200,
+        "profCost": 840,
+        "targetRevenue": 1680,
         "_sheetType": "Semana"
     },
     {
@@ -1044,7 +1159,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 6 aulas",
         "modality": "FDS",
         "basePrice": 340,
-        "targetRevenue": 1000,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -1053,7 +1169,8 @@ const COURSES_DATA = [
         "duration": "1 mês ou 6 aulas",
         "modality": "Semanal",
         "basePrice": 456,
-        "targetRevenue": 1400,
+        "profCost": 840,
+        "targetRevenue": 1680,
         "_sheetType": "Semana"
     },
     {
@@ -1062,6 +1179,7 @@ const COURSES_DATA = [
         "duration": "1 mês ou 6 aulas",
         "modality": "FDS",
         "basePrice": 456,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -1071,7 +1189,8 @@ const COURSES_DATA = [
         "duration": "1 mês ou 6 aulas",
         "modality": "Semanal",
         "basePrice": 510,
-        "targetRevenue": 1400,
+        "profCost": 840,
+        "targetRevenue": 1680,
         "_sheetType": "Semana"
     },
     {
@@ -1080,6 +1199,7 @@ const COURSES_DATA = [
         "duration": "1 mês ou 6 aulas",
         "modality": "FDS",
         "basePrice": 510,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -1089,7 +1209,8 @@ const COURSES_DATA = [
         "duration": "1 FDS ou 4 aulas",
         "modality": "Semanal",
         "basePrice": 361,
-        "targetRevenue": 1200,
+        "profCost": 560,
+        "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
     {
@@ -1098,7 +1219,8 @@ const COURSES_DATA = [
         "duration": "1 FDS ou 4 aulas",
         "modality": "FDS",
         "basePrice": 361,
-        "targetRevenue": 1000,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -1107,7 +1229,8 @@ const COURSES_DATA = [
         "duration": "1 FDS ou 4 aulas",
         "modality": "Semanal",
         "basePrice": 405,
-        "targetRevenue": 1200,
+        "profCost": 560,
+        "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
     {
@@ -1116,7 +1239,8 @@ const COURSES_DATA = [
         "duration": "1 FDS ou 4 aulas",
         "modality": "FDS",
         "basePrice": 405,
-        "targetRevenue": 1000,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -1125,6 +1249,7 @@ const COURSES_DATA = [
         "duration": "1 mês ou 8 aulas",
         "modality": "Semanal",
         "basePrice": 855,
+        "profCost": 1120,
         "targetRevenue": 2240,
         "_sheetType": "Semana"
     },
@@ -1134,6 +1259,7 @@ const COURSES_DATA = [
         "duration": "1 mês ou 8 aulas",
         "modality": "FDS",
         "basePrice": 855,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -1143,6 +1269,7 @@ const COURSES_DATA = [
         "duration": "1 mês ou 8 aulas",
         "modality": "Semanal",
         "basePrice": 958,
+        "profCost": 1120,
         "targetRevenue": 2240,
         "_sheetType": "Semana"
     },
@@ -1152,6 +1279,7 @@ const COURSES_DATA = [
         "duration": "1 mês ou 8 aulas",
         "modality": "FDS",
         "basePrice": 958,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -1161,7 +1289,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 608,
-        "targetRevenue": 1400,
+        "profCost": 560,
+        "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
     {
@@ -1170,7 +1299,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "FDS",
         "basePrice": 608,
-        "targetRevenue": 1500,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -1179,6 +1309,7 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 680,
+        "profCost": 560,
         "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
@@ -1188,6 +1319,7 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "FDS",
         "basePrice": 680,
+        "profCost": 600,
         "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
@@ -1197,7 +1329,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 536,
-        "targetRevenue": 1400,
+        "profCost": 560,
+        "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
     {
@@ -1206,7 +1339,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "FDS",
         "basePrice": 536,
-        "targetRevenue": 1500,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -1215,7 +1349,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 604,
-        "targetRevenue": 1400,
+        "profCost": 560,
+        "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
     {
@@ -1224,7 +1359,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "FDS",
         "basePrice": 604,
-        "targetRevenue": 1500,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -1233,6 +1369,7 @@ const COURSES_DATA = [
         "duration": "1 FDS",
         "modality": "Semanal",
         "basePrice": 551,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "Semana"
     },
@@ -1242,7 +1379,8 @@ const COURSES_DATA = [
         "duration": "1 FDS",
         "modality": "FDS",
         "basePrice": 551,
-        "targetRevenue": 1500,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -1251,6 +1389,7 @@ const COURSES_DATA = [
         "duration": "1 FDS",
         "modality": "Semanal",
         "basePrice": 618,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "Semana"
     },
@@ -1260,7 +1399,8 @@ const COURSES_DATA = [
         "duration": "1 FDS",
         "modality": "FDS",
         "basePrice": 618,
-        "targetRevenue": 1500,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -1269,6 +1409,7 @@ const COURSES_DATA = [
         "duration": "1 mês ou 8 aulas",
         "modality": "Semanal",
         "basePrice": 755,
+        "profCost": 1120,
         "targetRevenue": 2240,
         "_sheetType": "Semana"
     },
@@ -1278,6 +1419,7 @@ const COURSES_DATA = [
         "duration": "1 mês ou 8 aulas",
         "modality": "FDS",
         "basePrice": 755,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -1287,6 +1429,7 @@ const COURSES_DATA = [
         "duration": "1 mês ou 8 aulas",
         "modality": "Semanal",
         "basePrice": 846,
+        "profCost": 1120,
         "targetRevenue": 2240,
         "_sheetType": "Semana"
     },
@@ -1296,6 +1439,7 @@ const COURSES_DATA = [
         "duration": "1 mês ou 8 aulas",
         "modality": "FDS",
         "basePrice": 846,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -1305,6 +1449,7 @@ const COURSES_DATA = [
         "duration": "1 FDS, 15 dias ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 480,
+        "profCost": 560,
         "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
@@ -1314,7 +1459,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 15 dias ou 4 encontros",
         "modality": "FDS",
         "basePrice": 480,
-        "targetRevenue": 1000,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -1323,6 +1469,7 @@ const COURSES_DATA = [
         "duration": "1 FDS, 15 dias ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 538,
+        "profCost": 560,
         "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
@@ -1332,6 +1479,7 @@ const COURSES_DATA = [
         "duration": "1 FDS, 15 dias ou 4 encontros",
         "modality": "FDS",
         "basePrice": 538,
+        "profCost": 600,
         "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
@@ -1341,6 +1489,7 @@ const COURSES_DATA = [
         "duration": "1 FDS  ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 456,
+        "profCost": 560,
         "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
@@ -1350,6 +1499,7 @@ const COURSES_DATA = [
         "duration": "1 FDS  ou 4 encontros",
         "modality": "FDS",
         "basePrice": 456,
+        "profCost": 600,
         "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
@@ -1359,6 +1509,7 @@ const COURSES_DATA = [
         "duration": "1 FDS  ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 510,
+        "profCost": 560,
         "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
@@ -1368,6 +1519,7 @@ const COURSES_DATA = [
         "duration": "1 FDS  ou 4 encontros",
         "modality": "FDS",
         "basePrice": 510,
+        "profCost": 600,
         "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
@@ -1377,6 +1529,7 @@ const COURSES_DATA = [
         "duration": "1 mês ou 8 aulas",
         "modality": "Semanal",
         "basePrice": 755,
+        "profCost": 1120,
         "targetRevenue": 2240,
         "_sheetType": "Semana"
     },
@@ -1386,6 +1539,7 @@ const COURSES_DATA = [
         "duration": "1 mês ou 8 aulas",
         "modality": "FDS",
         "basePrice": 755,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -1395,6 +1549,7 @@ const COURSES_DATA = [
         "duration": "1 mês ou 8 aulas",
         "modality": "Semanal",
         "basePrice": 846,
+        "profCost": 1120,
         "targetRevenue": 2240,
         "_sheetType": "Semana"
     },
@@ -1404,6 +1559,7 @@ const COURSES_DATA = [
         "duration": "1 mês ou 8 aulas",
         "modality": "FDS",
         "basePrice": 846,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -1413,7 +1569,8 @@ const COURSES_DATA = [
         "duration": "2 meses ou 16 encontros",
         "modality": "Semanal",
         "basePrice": 1045,
-        "targetRevenue": 3733.33,
+        "profCost": 2240,
+        "targetRevenue": 4480,
         "_sheetType": "Semana"
     },
     {
@@ -1422,6 +1579,7 @@ const COURSES_DATA = [
         "duration": "2 meses ou 16 encontros",
         "modality": "FDS",
         "basePrice": 1045,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -1431,7 +1589,8 @@ const COURSES_DATA = [
         "duration": "2 meses ou 16 encontros",
         "modality": "Semanal",
         "basePrice": 1174,
-        "targetRevenue": 3200,
+        "profCost": 2240,
+        "targetRevenue": 4480,
         "_sheetType": "Semana"
     },
     {
@@ -1440,6 +1599,7 @@ const COURSES_DATA = [
         "duration": "2 meses ou 16 encontros",
         "modality": "FDS",
         "basePrice": 1174,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -1449,6 +1609,7 @@ const COURSES_DATA = [
         "duration": "2 FDS",
         "modality": "Semanal",
         "basePrice": 760,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "Semana"
     },
@@ -1458,7 +1619,8 @@ const COURSES_DATA = [
         "duration": "2 FDS",
         "modality": "FDS",
         "basePrice": 760,
-        "targetRevenue": 2000,
+        "profCost": 1200,
+        "targetRevenue": 2400,
         "_sheetType": "FDS"
     },
     {
@@ -1467,6 +1629,7 @@ const COURSES_DATA = [
         "duration": "2 FDS",
         "modality": "Semanal",
         "basePrice": 850,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "Semana"
     },
@@ -1476,7 +1639,8 @@ const COURSES_DATA = [
         "duration": "2 FDS",
         "modality": "FDS",
         "basePrice": 850,
-        "targetRevenue": 2000,
+        "profCost": 1200,
+        "targetRevenue": 2400,
         "_sheetType": "FDS"
     },
     {
@@ -1485,6 +1649,7 @@ const COURSES_DATA = [
         "duration": "2 FDS, 1 mês ou 8 aulas,   ( a 10 aulas)",
         "modality": "Semanal",
         "basePrice": 875,
+        "profCost": 1120,
         "targetRevenue": 2240,
         "_sheetType": "Semana"
     },
@@ -1494,6 +1659,7 @@ const COURSES_DATA = [
         "duration": "2 FDS, 1 mês ou 8 aulas,   ( a 10 aulas)",
         "modality": "FDS",
         "basePrice": 875,
+        "profCost": 1200,
         "targetRevenue": 2400,
         "_sheetType": "FDS"
     },
@@ -1503,6 +1669,7 @@ const COURSES_DATA = [
         "duration": "2 FDS, 1 mês ou 8 aulas,   ( a 10 aulas)",
         "modality": "Semanal",
         "basePrice": 980,
+        "profCost": 1120,
         "targetRevenue": 2240,
         "_sheetType": "Semana"
     },
@@ -1512,6 +1679,7 @@ const COURSES_DATA = [
         "duration": "2 FDS, 1 mês ou 8 aulas,   ( a 10 aulas)",
         "modality": "FDS",
         "basePrice": 980,
+        "profCost": 1200,
         "targetRevenue": 2400,
         "_sheetType": "FDS"
     },
@@ -1521,7 +1689,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 15 dias ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 508,
-        "targetRevenue": 1400,
+        "profCost": 560,
+        "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
     {
@@ -1530,7 +1699,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 15 dias ou 4 encontros",
         "modality": "FDS",
         "basePrice": 508,
-        "targetRevenue": 1500,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -1539,7 +1709,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 15 dias ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 570,
-        "targetRevenue": 1400,
+        "profCost": 560,
+        "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
     {
@@ -1548,7 +1719,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 15 dias ou 4 encontros",
         "modality": "FDS",
         "basePrice": 570,
-        "targetRevenue": 1500,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -1557,7 +1729,8 @@ const COURSES_DATA = [
         "duration": "1 aulas",
         "modality": "Semanal",
         "basePrice": 745,
-        "targetRevenue": 1400,
+        "profCost": 140,
+        "targetRevenue": 280,
         "_sheetType": "Semana"
     },
     {
@@ -1566,6 +1739,7 @@ const COURSES_DATA = [
         "duration": "1 aulas",
         "modality": "FDS",
         "basePrice": 745,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -1575,7 +1749,8 @@ const COURSES_DATA = [
         "duration": "1 aulas",
         "modality": "Semanal",
         "basePrice": 836,
-        "targetRevenue": 1400,
+        "profCost": 140,
+        "targetRevenue": 280,
         "_sheetType": "Semana"
     },
     {
@@ -1584,6 +1759,7 @@ const COURSES_DATA = [
         "duration": "1 aulas",
         "modality": "FDS",
         "basePrice": 836,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -1593,6 +1769,7 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 455,
+        "profCost": 560,
         "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
@@ -1602,6 +1779,7 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "FDS",
         "basePrice": 455,
+        "profCost": 600,
         "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
@@ -1611,6 +1789,7 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 512,
+        "profCost": 560,
         "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
@@ -1620,6 +1799,7 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "FDS",
         "basePrice": 512,
+        "profCost": 600,
         "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
@@ -1629,6 +1809,7 @@ const COURSES_DATA = [
         "duration": "1 FDS",
         "modality": "Semanal",
         "basePrice": 375,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "Semana"
     },
@@ -1638,7 +1819,8 @@ const COURSES_DATA = [
         "duration": "1 FDS",
         "modality": "FDS",
         "basePrice": 375,
-        "targetRevenue": 857.14,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -1647,6 +1829,7 @@ const COURSES_DATA = [
         "duration": "1 FDS",
         "modality": "Semanal",
         "basePrice": 421,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "Semana"
     },
@@ -1656,7 +1839,8 @@ const COURSES_DATA = [
         "duration": "1 FDS",
         "modality": "FDS",
         "basePrice": 421,
-        "targetRevenue": 857.14,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -1665,7 +1849,8 @@ const COURSES_DATA = [
         "duration": "1 mês ou 8 encontros",
         "modality": "Semanal",
         "basePrice": 608,
-        "targetRevenue": 1600,
+        "profCost": 1120,
+        "targetRevenue": 2240,
         "_sheetType": "Semana"
     },
     {
@@ -1674,6 +1859,7 @@ const COURSES_DATA = [
         "duration": "1 mês ou 8 encontros",
         "modality": "FDS",
         "basePrice": 608,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -1683,7 +1869,8 @@ const COURSES_DATA = [
         "duration": "1 mês ou 8 encontros",
         "modality": "Semanal",
         "basePrice": 680,
-        "targetRevenue": 1600,
+        "profCost": 1120,
+        "targetRevenue": 2240,
         "_sheetType": "Semana"
     },
     {
@@ -1692,6 +1879,7 @@ const COURSES_DATA = [
         "duration": "1 mês ou 8 encontros",
         "modality": "FDS",
         "basePrice": 680,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -1701,6 +1889,7 @@ const COURSES_DATA = [
         "duration": "1 FDS, 15 dias ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 480,
+        "profCost": 560,
         "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
@@ -1710,6 +1899,7 @@ const COURSES_DATA = [
         "duration": "1 FDS, 15 dias ou 4 encontros",
         "modality": "FDS",
         "basePrice": 480,
+        "profCost": 600,
         "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
@@ -1719,6 +1909,7 @@ const COURSES_DATA = [
         "duration": "1 FDS, 15 dias ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 542,
+        "profCost": 560,
         "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
@@ -1728,6 +1919,7 @@ const COURSES_DATA = [
         "duration": "1 FDS, 15 dias ou 4 encontros",
         "modality": "FDS",
         "basePrice": 542,
+        "profCost": 600,
         "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
@@ -1737,6 +1929,7 @@ const COURSES_DATA = [
         "duration": "1 FDS, 20 dias ou 6 encontros",
         "modality": "Semanal",
         "basePrice": 715,
+        "profCost": 840,
         "targetRevenue": 1680,
         "_sheetType": "Semana"
     },
@@ -1746,7 +1939,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 20 dias ou 6 encontros",
         "modality": "FDS",
         "basePrice": 715,
-        "targetRevenue": 1500,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -1755,6 +1949,7 @@ const COURSES_DATA = [
         "duration": "1 FDS, 20 dias ou 6 encontros",
         "modality": "Semanal",
         "basePrice": 798,
+        "profCost": 840,
         "targetRevenue": 1680,
         "_sheetType": "Semana"
     },
@@ -1764,7 +1959,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 20 dias ou 6 encontros",
         "modality": "FDS",
         "basePrice": 798,
-        "targetRevenue": 2000,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -1773,6 +1969,7 @@ const COURSES_DATA = [
         "duration": "1 FDS, 20 dias ou 6 encontros",
         "modality": "Semanal",
         "basePrice": 615,
+        "profCost": 840,
         "targetRevenue": 1680,
         "_sheetType": "Semana"
     },
@@ -1782,7 +1979,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 20 dias ou 6 encontros",
         "modality": "FDS",
         "basePrice": 615,
-        "targetRevenue": 1500,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -1791,6 +1989,7 @@ const COURSES_DATA = [
         "duration": "1 FDS, 20 dias ou 6 encontros",
         "modality": "Semanal",
         "basePrice": 690,
+        "profCost": 840,
         "targetRevenue": 1680,
         "_sheetType": "Semana"
     },
@@ -1800,7 +1999,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 20 dias ou 6 encontros",
         "modality": "FDS",
         "basePrice": 690,
-        "targetRevenue": 1500,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -1809,6 +2009,7 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 530,
+        "profCost": 560,
         "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
@@ -1818,7 +2019,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "FDS",
         "basePrice": 530,
-        "targetRevenue": 1500,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -1827,7 +2029,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 595,
-        "targetRevenue": 1400,
+        "profCost": 560,
+        "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
     {
@@ -1836,7 +2039,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "FDS",
         "basePrice": 595,
-        "targetRevenue": 1500,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -1845,6 +2049,7 @@ const COURSES_DATA = [
         "duration": "1 FDS",
         "modality": "Semanal",
         "basePrice": 579,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "Semana"
     },
@@ -1854,7 +2059,8 @@ const COURSES_DATA = [
         "duration": "1 FDS",
         "modality": "FDS",
         "basePrice": 579,
-        "targetRevenue": 1500,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -1863,6 +2069,7 @@ const COURSES_DATA = [
         "duration": "1 FDS",
         "modality": "Semanal",
         "basePrice": 650,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "Semana"
     },
@@ -1872,7 +2079,8 @@ const COURSES_DATA = [
         "duration": "1 FDS",
         "modality": "FDS",
         "basePrice": 650,
-        "targetRevenue": 1500,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -1881,7 +2089,8 @@ const COURSES_DATA = [
         "duration": "1 mês ou 8 encontros",
         "modality": "Semanal",
         "basePrice": 608,
-        "targetRevenue": 1600,
+        "profCost": 1120,
+        "targetRevenue": 2240,
         "_sheetType": "Semana"
     },
     {
@@ -1890,6 +2099,7 @@ const COURSES_DATA = [
         "duration": "1 mês ou 8 encontros",
         "modality": "FDS",
         "basePrice": 608,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -1899,7 +2109,8 @@ const COURSES_DATA = [
         "duration": "1 mês ou 8 encontros",
         "modality": "Semanal",
         "basePrice": 680,
-        "targetRevenue": 1866.67,
+        "profCost": 1120,
+        "targetRevenue": 2240,
         "_sheetType": "Semana"
     },
     {
@@ -1908,6 +2119,7 @@ const COURSES_DATA = [
         "duration": "1 mês ou 8 encontros",
         "modality": "FDS",
         "basePrice": 680,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -1917,7 +2129,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 8 encontros",
         "modality": "Semanal",
         "basePrice": 456,
-        "targetRevenue": 1600,
+        "profCost": 1120,
+        "targetRevenue": 2240,
         "_sheetType": "Semana"
     },
     {
@@ -1926,6 +2139,7 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 8 encontros",
         "modality": "FDS",
         "basePrice": 456,
+        "profCost": 600,
         "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
@@ -1935,7 +2149,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 8 encontros",
         "modality": "Semanal",
         "basePrice": 512,
-        "targetRevenue": 1600,
+        "profCost": 1120,
+        "targetRevenue": 2240,
         "_sheetType": "Semana"
     },
     {
@@ -1944,6 +2159,7 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 8 encontros",
         "modality": "FDS",
         "basePrice": 512,
+        "profCost": 600,
         "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
@@ -1953,7 +2169,8 @@ const COURSES_DATA = [
         "duration": "2 encontros",
         "modality": "Semanal",
         "basePrice": 375,
-        "targetRevenue": 933.33,
+        "profCost": 280,
+        "targetRevenue": 560,
         "_sheetType": "Semana"
     },
     {
@@ -1962,6 +2179,7 @@ const COURSES_DATA = [
         "duration": "2 encontros",
         "modality": "FDS",
         "basePrice": 375,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -1971,7 +2189,8 @@ const COURSES_DATA = [
         "duration": "2 encontros",
         "modality": "Semanal",
         "basePrice": 421,
-        "targetRevenue": 933.33,
+        "profCost": 280,
+        "targetRevenue": 560,
         "_sheetType": "Semana"
     },
     {
@@ -1980,6 +2199,7 @@ const COURSES_DATA = [
         "duration": "2 encontros",
         "modality": "FDS",
         "basePrice": 421,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -1989,7 +2209,8 @@ const COURSES_DATA = [
         "duration": "2 encontros",
         "modality": "Semanal",
         "basePrice": 375,
-        "targetRevenue": 933.33,
+        "profCost": 280,
+        "targetRevenue": 560,
         "_sheetType": "Semana"
     },
     {
@@ -1998,6 +2219,7 @@ const COURSES_DATA = [
         "duration": "2 encontros",
         "modality": "FDS",
         "basePrice": 375,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -2007,7 +2229,8 @@ const COURSES_DATA = [
         "duration": "2 encontros",
         "modality": "Semanal",
         "basePrice": 421,
-        "targetRevenue": 933.33,
+        "profCost": 280,
+        "targetRevenue": 560,
         "_sheetType": "Semana"
     },
     {
@@ -2016,6 +2239,7 @@ const COURSES_DATA = [
         "duration": "2 encontros",
         "modality": "FDS",
         "basePrice": 421,
+        "profCost": 0,
         "targetRevenue": 0,
         "_sheetType": "FDS"
     },
@@ -2025,6 +2249,7 @@ const COURSES_DATA = [
         "duration": "2 FDS, 2 meses ou 8 encontros",
         "modality": "Semanal",
         "basePrice": 1022,
+        "profCost": 1120,
         "targetRevenue": 2240,
         "_sheetType": "Semana"
     },
@@ -2034,6 +2259,7 @@ const COURSES_DATA = [
         "duration": "2 FDS, 2 meses ou 8 encontros",
         "modality": "FDS",
         "basePrice": 1022,
+        "profCost": 1200,
         "targetRevenue": 2400,
         "_sheetType": "FDS"
     },
@@ -2043,6 +2269,7 @@ const COURSES_DATA = [
         "duration": "2 FDS, 2 meses ou 8 encontros",
         "modality": "Semanal",
         "basePrice": 1145,
+        "profCost": 1120,
         "targetRevenue": 2240,
         "_sheetType": "Semana"
     },
@@ -2052,6 +2279,7 @@ const COURSES_DATA = [
         "duration": "2 FDS, 2 meses ou 8 encontros",
         "modality": "FDS",
         "basePrice": 1145,
+        "profCost": 1200,
         "targetRevenue": 2400,
         "_sheetType": "FDS"
     },
@@ -2061,7 +2289,8 @@ const COURSES_DATA = [
         "duration": "2 FDS, 1 mês e meio ou 12 encontros",
         "modality": "Semanal",
         "basePrice": 912,
-        "targetRevenue": 2400,
+        "profCost": 1680,
+        "targetRevenue": 3360,
         "_sheetType": "Semana"
     },
     {
@@ -2070,7 +2299,8 @@ const COURSES_DATA = [
         "duration": "2 FDS, 1 mês e meio ou 12 encontros",
         "modality": "FDS",
         "basePrice": 912,
-        "targetRevenue": 2000,
+        "profCost": 1200,
+        "targetRevenue": 2400,
         "_sheetType": "FDS"
     },
     {
@@ -2079,7 +2309,8 @@ const COURSES_DATA = [
         "duration": "2 FDS, 1 mês e meio ou 12 encontros",
         "modality": "Semanal",
         "basePrice": 1020,
-        "targetRevenue": 2800,
+        "profCost": 1680,
+        "targetRevenue": 3360,
         "_sheetType": "Semana"
     },
     {
@@ -2088,7 +2319,8 @@ const COURSES_DATA = [
         "duration": "2 FDS, 1 mês e meio ou 12 encontros",
         "modality": "FDS",
         "basePrice": 1020,
-        "targetRevenue": 3000,
+        "profCost": 1200,
+        "targetRevenue": 2400,
         "_sheetType": "FDS"
     },
     {
@@ -2097,6 +2329,7 @@ const COURSES_DATA = [
         "duration": "2 FDS ou 8 encontros",
         "modality": "Semanal",
         "basePrice": 870,
+        "profCost": 1120,
         "targetRevenue": 2240,
         "_sheetType": "Semana"
     },
@@ -2106,6 +2339,7 @@ const COURSES_DATA = [
         "duration": "2 FDS ou 8 encontros",
         "modality": "FDS",
         "basePrice": 870,
+        "profCost": 1200,
         "targetRevenue": 2400,
         "_sheetType": "FDS"
     },
@@ -2115,6 +2349,7 @@ const COURSES_DATA = [
         "duration": "2 FDS ou 8 encontros",
         "modality": "Semanal",
         "basePrice": 974,
+        "profCost": 1120,
         "targetRevenue": 2240,
         "_sheetType": "Semana"
     },
@@ -2124,6 +2359,7 @@ const COURSES_DATA = [
         "duration": "2 FDS ou 8 encontros",
         "modality": "FDS",
         "basePrice": 974,
+        "profCost": 1200,
         "targetRevenue": 2400,
         "_sheetType": "FDS"
     },
@@ -2133,7 +2369,8 @@ const COURSES_DATA = [
         "duration": "2 FDS, 1 mês e meio ou 10 encontros",
         "modality": "Semanal",
         "basePrice": 1095,
-        "targetRevenue": 2333.33,
+        "profCost": 1400,
+        "targetRevenue": 2800,
         "_sheetType": "Semana"
     },
     {
@@ -2142,7 +2379,8 @@ const COURSES_DATA = [
         "duration": "2 FDS, 1 mês e meio ou 10 encontros",
         "modality": "FDS",
         "basePrice": 1095,
-        "targetRevenue": 3000,
+        "profCost": 1200,
+        "targetRevenue": 2400,
         "_sheetType": "FDS"
     },
     {
@@ -2151,6 +2389,7 @@ const COURSES_DATA = [
         "duration": "2 FDS, 1 mês e meio ou 10 encontros",
         "modality": "Semanal",
         "basePrice": 1225,
+        "profCost": 1400,
         "targetRevenue": 2800,
         "_sheetType": "Semana"
     },
@@ -2160,7 +2399,8 @@ const COURSES_DATA = [
         "duration": "2 FDS, 1 mês e meio ou 10 encontros",
         "modality": "FDS",
         "basePrice": 1225,
-        "targetRevenue": 3000,
+        "profCost": 1200,
+        "targetRevenue": 2400,
         "_sheetType": "FDS"
     },
     {
@@ -2169,7 +2409,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 530,
-        "targetRevenue": 1400,
+        "profCost": 560,
+        "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
     {
@@ -2178,7 +2419,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "FDS",
         "basePrice": 530,
-        "targetRevenue": 1500,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -2187,7 +2429,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 595,
-        "targetRevenue": 1400,
+        "profCost": 560,
+        "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
     {
@@ -2196,7 +2439,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "FDS",
         "basePrice": 595,
-        "targetRevenue": 1500,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -2205,7 +2449,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 635,
-        "targetRevenue": 1400,
+        "profCost": 560,
+        "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
     {
@@ -2214,7 +2459,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "FDS",
         "basePrice": 635,
-        "targetRevenue": 1500,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -2223,7 +2469,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 705,
-        "targetRevenue": 1866.67,
+        "profCost": 560,
+        "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
     {
@@ -2232,7 +2479,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "FDS",
         "basePrice": 705,
-        "targetRevenue": 2000,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -2241,7 +2489,8 @@ const COURSES_DATA = [
         "duration": "2 FDS, 2 meses ou 8 aulas",
         "modality": "Semanal",
         "basePrice": 1260,
-        "targetRevenue": 3733.33,
+        "profCost": 1120,
+        "targetRevenue": 2240,
         "_sheetType": "Semana"
     },
     {
@@ -2250,7 +2499,8 @@ const COURSES_DATA = [
         "duration": "2 FDS, 2 meses ou 8 aulas",
         "modality": "FDS",
         "basePrice": 1260,
-        "targetRevenue": 3000,
+        "profCost": 1200,
+        "targetRevenue": 2400,
         "_sheetType": "FDS"
     },
     {
@@ -2259,7 +2509,8 @@ const COURSES_DATA = [
         "duration": "2 FDS, 2 meses ou 8 aulas",
         "modality": "Semanal",
         "basePrice": 1410,
-        "targetRevenue": 3733.33,
+        "profCost": 1120,
+        "targetRevenue": 2240,
         "_sheetType": "Semana"
     },
     {
@@ -2268,7 +2519,8 @@ const COURSES_DATA = [
         "duration": "2 FDS, 2 meses ou 8 aulas",
         "modality": "FDS",
         "basePrice": 1410,
-        "targetRevenue": 3000,
+        "profCost": 1200,
+        "targetRevenue": 2400,
         "_sheetType": "FDS"
     },
     {
@@ -2277,7 +2529,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 530,
-        "targetRevenue": 1400,
+        "profCost": 560,
+        "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
     {
@@ -2286,7 +2539,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "FDS",
         "basePrice": 530,
-        "targetRevenue": 1500,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -2295,7 +2549,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 595,
-        "targetRevenue": 1400,
+        "profCost": 560,
+        "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
     {
@@ -2304,7 +2559,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "FDS",
         "basePrice": 595,
-        "targetRevenue": 1500,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -2313,7 +2569,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 635,
-        "targetRevenue": 1400,
+        "profCost": 560,
+        "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
     {
@@ -2322,7 +2579,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "FDS",
         "basePrice": 635,
-        "targetRevenue": 1500,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -2331,7 +2589,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "Semanal",
         "basePrice": 705,
-        "targetRevenue": 1866.67,
+        "profCost": 560,
+        "targetRevenue": 1120,
         "_sheetType": "Semana"
     },
     {
@@ -2340,7 +2599,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 1 mês ou 4 encontros",
         "modality": "FDS",
         "basePrice": 705,
-        "targetRevenue": 1500,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -2349,6 +2609,7 @@ const COURSES_DATA = [
         "duration": "1 FDS, 15 dias ou 5 encontros",
         "modality": "Semanal",
         "basePrice": 432,
+        "profCost": 700,
         "targetRevenue": 1400,
         "_sheetType": "Semana"
     },
@@ -2358,7 +2619,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 15 dias ou 5 encontros",
         "modality": "FDS",
         "basePrice": 432,
-        "targetRevenue": 1000,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     },
     {
@@ -2367,6 +2629,7 @@ const COURSES_DATA = [
         "duration": "1 FDS, 15 dias ou 5 encontros",
         "modality": "Semanal",
         "basePrice": 485,
+        "profCost": 700,
         "targetRevenue": 1400,
         "_sheetType": "Semana"
     },
@@ -2376,7 +2639,8 @@ const COURSES_DATA = [
         "duration": "1 FDS, 15 dias ou 5 encontros",
         "modality": "FDS",
         "basePrice": 485,
-        "targetRevenue": 1000,
+        "profCost": 600,
+        "targetRevenue": 1200,
         "_sheetType": "FDS"
     }
 ];

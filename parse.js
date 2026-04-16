@@ -52,8 +52,13 @@ for (let i = 2; i < lines.length; i++) { // Skip headers
     const basePriceRaw = row[5] || '';
     let basePrice = parseFloat(basePriceRaw.replace(/[^\d,]/g, '').replace(',', '.')) || 0;
 
-    const targetRevRaw = row[6] || '';
-    let targetRevenue = parseFloat(targetRevRaw.replace(/[^\d,]/g, '').replace(',', '.')) || 0;
+    const profCostRaw = row[4] || '';
+    let profCost = parseFloat(profCostRaw.replace(/[^\d,]/g, '').replace(',', '.')) || 0;
+    
+    // Novo cálculo da meta receita: Meta = Professor + 10% (custo) + 40% (lucro)
+    // Isso significa que o professor representa 50% da meta total final. 
+    // Logo Meta = Professor / 0.5 (que é multiplicar por 2).
+    let targetRevenue = profCost / 0.5;
     
     // Some courses have "escolher" in column C. Let's map modality
     let modality = type.includes('FDS') ? 'FDS' : (type.includes('Sema') ? 'Semanal' : 'Outro');
@@ -64,6 +69,7 @@ for (let i = 2; i < lines.length; i++) { // Skip headers
         duration,
         modality,
         basePrice,
+        profCost,
         targetRevenue,
         _sheetType: type // debug
     });
