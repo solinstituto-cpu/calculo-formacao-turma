@@ -56,13 +56,7 @@
                     </svg>
                     Calculadora
                 </button>
-                <button class="nav-btn" data-tab="config" id="nav-config">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="3"/>
-                        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
-                    </svg>
-                    Configurar Custos
-                </button>
+
                 <button class="nav-btn" data-tab="dashboard" id="nav-dashboard">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <rect x="3" y="3" width="7" height="9" rx="1"/>
@@ -219,63 +213,6 @@
                         <div class="projection-items" id="projection-items"></div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Config Tab -->
-        <section class="tab-content" id="tab-config">
-            <div class="section-header">
-                <h2>Configuração de Custos</h2>
-                <p>Defina o custo alvo (meta de receita) para cada curso. Este valor é usado para calcular quantos alunos são necessários.</p>
-            </div>
-
-            <div class="config-toolbar">
-                <div class="search-wrapper">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="11" cy="11" r="8"/>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
-                    </svg>
-                    <input type="text" id="config-search" placeholder="Buscar curso...">
-                </div>
-                <div class="select-wrapper" style="min-width: 180px;">
-                    <select id="config-modality-filter" style="padding: var(--space-sm) var(--space-lg) var(--space-sm) var(--space-md);">
-                        <option value="all">Todas as Modalidades</option>
-                        <option value="FDS">FDS (Finais de Semana)</option>
-                        <option value="Semanal">Semanal</option>
-                        <option value="Outro">Outros / Não Especificado</option>
-                    </select>
-                    <svg class="select-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polyline points="6 9 12 15 18 9"/>
-                    </svg>
-                </div>
-                <div class="config-actions">
-                    <button class="btn-secondary" id="btn-apply-all">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="20 6 9 17 4 12"/>
-                        </svg>
-                        Aplicar Valor Padrão a Todos
-                    </button>
-                    <div class="default-value-input">
-                        <span>R$</span>
-                        <input type="number" id="default-cost" value="1400" step="100" min="0">
-                    </div>
-                </div>
-            </div>
-
-            <div class="config-table-wrapper">
-                <table class="config-table" id="config-table">
-                    <thead>
-                        <tr>
-                            <th class="col-name">Curso</th>
-                            <th class="col-duration">Duração</th>
-                            <th class="col-base">Valor Base (R$)</th>
-                            <th class="col-cost">Custo Alvo (R$)</th>
-                            <th class="col-status">Status</th>
-                        </tr>
-                    </thead>
-                    <tbody id="config-tbody">
-                    </tbody>
-                </table>
             </div>
         </section>
 
