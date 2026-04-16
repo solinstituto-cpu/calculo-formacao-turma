@@ -372,6 +372,27 @@ class App {
             }
         ];
 
+        if (enrolled > 0) {
+            const currentRevenue = discountValue * enrolled;
+            // The profit/resultado for the current enrolled students was calculated as diff previously. 
+            // In the user's screenshot it was R$ 1080.00
+            // Because 5 * 456 = 2280.   Target Revenue = 1200.   Diff = 2280 - 1200 = 1080.
+            const diff = currentRevenue - course.targetRevenue;
+            
+            rows.push({
+                label: `Receita atual (${enrolled} aluno${enrolled !== 1 ? 's' : ''} × R$ ${discountValue.toFixed(2)})`,
+                value: currentRevenue,
+                format: 'currency',
+                class: 'neutral'
+            });
+            rows.push({
+                label: 'Resultado atual',
+                value: diff,
+                format: 'currency',
+                class: diff >= 0 ? 'positive' : 'negative'
+            });
+        }
+
         rows.forEach(row => {
             const div = document.createElement('div');
             div.className = 'projection-row';
