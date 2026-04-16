@@ -93,11 +93,14 @@ class App {
             
             if (val > 0 && val < course.basePrice) {
                 const discount = ((course.basePrice - val) / course.basePrice * 100).toFixed(1);
-                hint.textContent = `Desconto de ${discount}% sobre o valor base`;
+                hint.textContent = `Desconto de ${discount}% (Abaixo do Mercado)`;
                 hint.className = 'input-hint success';
-            } else if (val >= course.basePrice) {
-                hint.textContent = 'Valor igual ou superior ao valor base (sem desconto)';
+            } else if (val === course.basePrice) {
+                hint.textContent = 'Sem desconto (Valor Exato de Mercado)';
                 hint.className = 'input-hint warning';
+            } else if (val > course.basePrice) {
+                hint.textContent = `Atenção: R$ ${(val - course.basePrice).toFixed(2)} acima do Preço de Mercado!`;
+                hint.className = 'input-hint error';
             } else {
                 hint.textContent = '';
                 hint.className = 'input-hint';
@@ -211,6 +214,11 @@ class App {
             return;
         }
 
+        if (discountValue > course.basePrice) {
+            this.showToast('O valor negociado não pode ser maior que o valor base de mercado!', 'error');
+            return;
+        }
+
         // Core calculation: ARREDONDAR.PARA.CIMA(G/F; 0)
         const studentsNeeded = Math.ceil(course.targetRevenue / discountValue);
         const discountPercent = ((course.basePrice - discountValue) / course.basePrice * 100);
@@ -236,7 +244,7 @@ class App {
             `${Math.min(Math.max(discountPercent, 0), 100)}%`;
 
         // Suggested prices for 2, 3, 4, 5 students
-        this.renderSuggestedPrices(course, studentsNeeded);
+        this.renderSuggestedPrices(course);
 
         // Revenue projection
         this.renderRevenueProjection(course, discountValue, studentsNeeded, enrolled);
@@ -283,7 +291,7 @@ class App {
         }
     }
 
-    renderSuggestedPrices(course, studentsNeeded) {
+    renderSuggestedPrices(course) {
         const grid = document.getElementById('price-grid');
         grid.innerHTML = '';
 
@@ -291,17 +299,18 @@ class App {
             const div = document.createElement('div');
             div.className = 'price-item';
 
-            if (n < studentsNeeded) {
+            const requiredPrice = course.targetRevenue / n;
+
+            if (requiredPrice > course.basePrice) {
                 div.classList.add('not-allowed');
                 div.innerHTML = `
                     <div class="price-students">${n} alunos</div>
-                    <div class="price-value">Não permitido</div>
+                    <div class="price-value" style="font-size: 0.75rem; color: var(--red-400);">Acima do<br>Mercado</div>
                 `;
             } else {
-                const price = course.targetRevenue / n;
                 div.innerHTML = `
                     <div class="price-students">${n} alunos</div>
-                    <div class="price-value">R$ ${price.toFixed(2)}</div>
+                    <div class="price-value">R$ ${requiredPrice.toFixed(2)}</div>
                 `;
             }
 
