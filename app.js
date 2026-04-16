@@ -319,24 +319,28 @@ class App {
         const container = document.getElementById('projection-items');
         container.innerHTML = '';
 
+        const totalRevenue = discountValue * needed;
+        const opCosts = totalRevenue * 0.10; // 10% custo
+        const estimatedProfit = totalRevenue - course.profCost - opCosts;
+
         const rows = [
             {
-                label: 'Receita com desconto × alunos necessários',
-                value: discountValue * needed,
+                label: 'Receita Total (Arrecadação)',
+                value: totalRevenue,
                 format: 'currency',
                 class: 'neutral'
             },
             {
-                label: 'Custo alvo (meta de receita)',
-                value: course.targetRevenue,
+                label: `Custo Professor + 10% Custos Ops.`,
+                value: course.profCost + opCosts,
                 format: 'currency',
                 class: 'neutral'
             },
             {
-                label: 'Margem (receita - custo alvo)',
-                value: (discountValue * needed) - course.targetRevenue,
+                label: 'Lucro Líquido Estimado da Turma',
+                value: estimatedProfit,
                 format: 'currency',
-                class: (discountValue * needed) - course.targetRevenue >= 0 ? 'positive' : 'negative'
+                class: estimatedProfit >= 0 ? 'positive' : 'negative'
             }
         ];
 
