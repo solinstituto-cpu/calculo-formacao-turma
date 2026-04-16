@@ -345,8 +345,6 @@ class App {
         container.innerHTML = '';
 
         const totalRevenue = discountValue * needed;
-        const opCosts = totalRevenue * 0.10; // 10% custo
-        const estimatedProfit = totalRevenue - course.profCost - opCosts;
 
         const rows = [
             {
