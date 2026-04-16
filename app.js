@@ -244,9 +244,12 @@ class App {
         this.renderSuggestedPrices(course);
 
         // Calculate and Show Big Profit Highlight
-        const totalRevenue = discountValue * studentsNeeded;
+        // If user provided enrolled students, compute actual profit based on that. 
+        // Otherwise, show minimum estimate based on needed.
+        const referenceStudents = enrolled > 0 ? enrolled : studentsNeeded;
+        const totalRevenue = discountValue * referenceStudents;
         
-        // Fallback for cache issues: if profCost is missing, recalculate it based on targetRevenue / 2
+        // Fallback for cache issues: if profCost is missing, recalculate it
         const profCost = course.profCost || (course.targetRevenue / 2);
         
         const opCosts = totalRevenue * 0.10; // 10% operational
@@ -269,7 +272,7 @@ class App {
         }
 
         // Revenue projection
-        this.renderRevenueProjection(course, discountValue, studentsNeeded, enrolled, estimatedProfit, profCost, opCosts);
+        this.renderRevenueProjection(course, discountValue, referenceStudents, enrolled, estimatedProfit, profCost, opCosts);
 
         // Scroll to results on mobile
         if (window.innerWidth <= 1024) {
@@ -340,15 +343,15 @@ class App {
         });
     }
 
-    renderRevenueProjection(course, discountValue, needed, enrolled, estimatedProfit, profCost, opCosts) {
+    renderRevenueProjection(course, discountValue, referenceStudents, enrolled, estimatedProfit, profCost, opCosts) {
         const container = document.getElementById('projection-items');
         container.innerHTML = '';
 
-        const totalRevenue = discountValue * needed;
+        const totalRevenue = discountValue * referenceStudents;
 
         const rows = [
             {
-                label: 'Receita Total (Arrecadação)',
+                label: `Receita Total (${referenceStudents} alunos)`,
                 value: totalRevenue,
                 format: 'currency',
                 class: 'neutral'
