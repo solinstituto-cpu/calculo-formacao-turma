@@ -365,7 +365,7 @@ class App {
                 class: 'neutral'
             },
             {
-                label: `<strong>Custo Professor + 10% Custos Ops.</strong><br><span style="font-size: 0.75rem; font-weight: 400; opacity: 0.7;">Dinheiro investido que sai do caixa. É a soma do custo fixo cobrado pelo professor com 10% de impostos/comissões retidos sobre a Receita Total.</span>`,
+                label: `<strong>Custo Professor + Custos Ops.</strong><br><span style="font-size: 0.75rem; font-weight: 400; opacity: 0.7;">Dinheiro investido que sai do caixa. É a soma do custo fixo cobrado pelo professor com os impostos/comissões retidos sobre a Receita Total.</span>`,
                 value: profCost + opCosts,
                 format: 'currency',
                 class: 'neutral'
