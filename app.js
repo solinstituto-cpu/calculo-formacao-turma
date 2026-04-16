@@ -243,8 +243,33 @@ class App {
         // Suggested prices for 2, 3, 4, 5 students
         this.renderSuggestedPrices(course);
 
+        // Calculate and Show Big Profit Highlight
+        const totalRevenue = discountValue * studentsNeeded;
+        
+        // Fallback for cache issues: if profCost is missing, recalculate it based on targetRevenue / 2
+        const profCost = course.profCost || (course.targetRevenue / 2);
+        
+        const opCosts = totalRevenue * 0.10; // 10% operational
+        const estimatedProfit = totalRevenue - profCost - opCosts;
+
+        const profitHighlight = document.getElementById('profit-highlight');
+        const profitValue = document.getElementById('profit-value');
+        
+        profitHighlight.style.display = 'block';
+        if (estimatedProfit >= 0) {
+            profitHighlight.style.borderColor = 'var(--green-400)';
+            profitHighlight.style.background = 'rgba(34, 197, 94, 0.1)';
+            profitValue.style.color = 'var(--green-400)';
+            profitValue.textContent = `+ R$ ${estimatedProfit.toFixed(2)}`;
+        } else {
+            profitHighlight.style.borderColor = 'var(--red-400)';
+            profitHighlight.style.background = 'rgba(239, 68, 68, 0.1)';
+            profitValue.style.color = 'var(--red-400)';
+            profitValue.textContent = `- R$ ${Math.abs(estimatedProfit).toFixed(2)}`;
+        }
+
         // Revenue projection
-        this.renderRevenueProjection(course, discountValue, studentsNeeded, enrolled);
+        this.renderRevenueProjection(course, discountValue, studentsNeeded, enrolled, estimatedProfit, profCost, opCosts);
 
         // Scroll to results on mobile
         if (window.innerWidth <= 1024) {
@@ -315,7 +340,7 @@ class App {
         });
     }
 
-    renderRevenueProjection(course, discountValue, needed, enrolled) {
+    renderRevenueProjection(course, discountValue, needed, enrolled, estimatedProfit, profCost, opCosts) {
         const container = document.getElementById('projection-items');
         container.innerHTML = '';
 
@@ -332,7 +357,7 @@ class App {
             },
             {
                 label: `Custo Professor + 10% Custos Ops.`,
-                value: course.profCost + opCosts,
+                value: profCost + opCosts,
                 format: 'currency',
                 class: 'neutral'
             },
