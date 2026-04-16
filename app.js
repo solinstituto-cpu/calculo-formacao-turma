@@ -257,8 +257,16 @@ class App {
 
         const profitHighlight = document.getElementById('profit-highlight');
         const profitValue = document.getElementById('profit-value');
+        const profitTitle = profitHighlight.querySelector('div:first-child');
         
         profitHighlight.style.display = 'block';
+        
+        // Dynamic title explaining what the number means
+        if (enrolled > 0) {
+            profitTitle.textContent = `LUCRO ESTIMADO DA TURMA ATUAL (${enrolled} ALUNOS)`;
+        } else {
+            profitTitle.textContent = `PROJEÇÃO DE LUCRO (COM ${studentsNeeded} ALUNOS MÍNIMOS)`;
+        }
         if (estimatedProfit >= 0) {
             profitHighlight.style.borderColor = 'var(--green-400)';
             profitHighlight.style.background = 'rgba(34, 197, 94, 0.1)';
