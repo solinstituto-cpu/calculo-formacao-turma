@@ -183,15 +183,12 @@ class App {
         
         courseInfo.style.display = 'block';
         
-        // Pre-fill discount value with base price
+        // Pre-fill discount value with base price (always overwrite when changing course)
         const discountInput = document.getElementById('discount-value');
-        if (!discountInput.value) {
-            discountInput.value = course.basePrice.toFixed(2);
-        }
+        discountInput.value = course.basePrice.toFixed(2);
         
-        // Clear hint
-        document.getElementById('discount-hint').textContent = '';
-        document.getElementById('discount-hint').className = 'input-hint';
+        // Trigger input event to update hints
+        discountInput.dispatchEvent(new Event('input'));
     }
 
     calculate() {
