@@ -369,6 +369,12 @@ class App {
                 value: profCost + opCosts,
                 format: 'currency',
                 class: 'neutral'
+            },
+            {
+                label: `<strong>Lucro Líquido Estimado da Turma</strong><br><span style="font-size: 0.75rem; font-weight: 400; opacity: 0.7;">Resultado de Receita Bruta menos o Dinheiro Investido. Saldo puro que vai para o Instituto.</span>`,
+                value: estimatedProfit,
+                format: 'currency',
+                class: estimatedProfit >= 0 ? 'positive' : 'negative'
             }
         ];
 
@@ -380,13 +386,13 @@ class App {
             const diff = currentRevenue - course.targetRevenue;
             
             rows.push({
-                label: `Receita atual (${enrolled} aluno${enrolled !== 1 ? 's' : ''} × R$ ${discountValue.toFixed(2)})`,
+                label: `<strong>Receita atual (${enrolled} aluno${enrolled !== 1 ? 's' : ''})</strong><br><span style="font-size: 0.75rem; font-weight: 400; opacity: 0.7;">Faturamento exato dos alunos que você já possui hoje.</span>`,
                 value: currentRevenue,
                 format: 'currency',
                 class: 'neutral'
             });
             rows.push({
-                label: 'Resultado atual',
+                label: `<strong>Resultado atual</strong><br><span style="font-size: 0.75rem; font-weight: 400; opacity: 0.7;">Saldo comparado à Meta Financeira original preestabelecida.</span>`,
                 value: diff,
                 format: 'currency',
                 class: diff >= 0 ? 'positive' : 'negative'
