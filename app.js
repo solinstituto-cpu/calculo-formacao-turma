@@ -359,41 +359,18 @@ class App {
 
         const rows = [
             {
-                label: `Receita Total (${referenceStudents} alunos)`,
+                label: `<strong>Receita Total (${referenceStudents} alunos)</strong><br><span style="font-size: 0.75rem; font-weight: 400; opacity: 0.7;">Faturamento Bruto: multiplicação exata da quantidade de alunos pelo Valor Com Desconto acordado.</span>`,
                 value: totalRevenue,
                 format: 'currency',
                 class: 'neutral'
             },
             {
-                label: `Custo Professor + 10% Custos Ops.`,
+                label: `<strong>Custo Professor + 10% Custos Ops.</strong><br><span style="font-size: 0.75rem; font-weight: 400; opacity: 0.7;">Dinheiro investido que sai do caixa. É a soma do custo fixo cobrado pelo professor com 10% de impostos/comissões retidos sobre a Receita Total.</span>`,
                 value: profCost + opCosts,
                 format: 'currency',
                 class: 'neutral'
-            },
-            {
-                label: 'Lucro Líquido Estimado da Turma',
-                value: estimatedProfit,
-                format: 'currency',
-                class: estimatedProfit >= 0 ? 'positive' : 'negative'
             }
         ];
-
-        if (enrolled > 0) {
-            const currentRevenue = discountValue * enrolled;
-            const diff = currentRevenue - course.targetRevenue;
-            rows.push({
-                label: `Receita atual (${enrolled} aluno${enrolled !== 1 ? 's' : ''} × R$ ${discountValue.toFixed(2)})`,
-                value: currentRevenue,
-                format: 'currency',
-                class: 'neutral'
-            });
-            rows.push({
-                label: 'Resultado atual',
-                value: diff,
-                format: 'currency',
-                class: diff >= 0 ? 'positive' : 'negative'
-            });
-        }
 
         rows.forEach(row => {
             const div = document.createElement('div');
